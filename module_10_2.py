@@ -4,9 +4,9 @@ from time import sleep
 class Knight(Thread):
 
     def __init__(self, name, power):
+        super().__init__()
         self.name = name
         self.power = power
-        super().__init__()
 
     def run(self):
         print(f'{self.name}, на нас напали!')
